@@ -1,7 +1,9 @@
-import { favBooks } from "../../assets/favBooks";
+import favBooks from "../../assets/favBooks.json";
 import BookList from "../BookList/BookList";
 import Card from "../Card/Card";
 import Product from "../Product/Product";
+import { DiAndroid } from "react-icons/di";
+import { DiDatabase } from "react-icons/di";
 // import Mailbox from "../Mailbox/Mailbox";
 
 export default function App() {
@@ -24,6 +26,11 @@ export default function App() {
       <Card>
         <h1>Card title</h1>
         <p>Text between opening and closing tag</p>
+        <p>
+          <DiAndroid size={35} />
+          <DiDatabase size={35} />
+          react-icons
+        </p>
       </Card>
     </>
   );
