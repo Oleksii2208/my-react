@@ -1,10 +1,17 @@
-import favBooks from "../../assets/favBooks.json";
-import BookList from "../BookList/BookList";
-import Card from "../Card/Card";
-import Product from "../Product/Product";
-import { DiAndroid } from "react-icons/di";
-import { DiDatabase } from "react-icons/di";
+// import favBooks from "../../assets/favBooks.json";
+// import BookList from "../BookList/BookList";
+// import Card from "../Card/Card";
+// import Product from "../Product/Product";
+// import { DiAndroid } from "react-icons/di";
+// import { DiDatabase } from "react-icons/di";
 // import Mailbox from "../Mailbox/Mailbox";
+
+import Profile from "../Profile/Profile";
+import userData from "../../assets/userData.json";
+import FriendList from "../FriendList/FriendList";
+import friends from "../../assets/friends.json";
+import TransactionHistory from "../TransactionHistory/TransactionHistory";
+import transactions from "../../assets/transactions.json";
 
 export default function App() {
   return (
@@ -19,19 +26,30 @@ export default function App() {
     //   />
     //   {/* <Mailbox username="Oleksii" messages="" /> */}
     // </div>
+    // <>
+    //   <h1>Books of the week</h1>
+    //   <BookList books={favBooks} />
+    //   {/* <Card text="Message as a text prop" /> */}
+    //   <Card>
+    //     <h1>Card title</h1>
+    //     <p>Text between opening and closing tag</p>
+    //     <p>
+    //       <DiAndroid size={35} />
+    //       <DiDatabase size={35} />
+    //       react-icons
+    //     </p>
+    //   </Card>
+    // </>
     <>
-      <h1>Books of the week</h1>
-      <BookList books={favBooks} />
-      {/* <Card text="Message as a text prop" /> */}
-      <Card>
-        <h1>Card title</h1>
-        <p>Text between opening and closing tag</p>
-        <p>
-          <DiAndroid size={35} />
-          <DiDatabase size={35} />
-          react-icons
-        </p>
-      </Card>
+      <Profile
+        name={userData.username}
+        tag={userData.tag}
+        location={userData.location}
+        image={userData.avatar}
+        stats={userData.stats}
+      />
+      <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
     </>
   );
 }
