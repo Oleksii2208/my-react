@@ -6,6 +6,10 @@
 // import { DiDatabase } from "react-icons/di";
 // import Mailbox from "../Mailbox/Mailbox";
 
+// import Button from "../Button/Button";
+// import Team from "../../assets/image/Team.png";
+// import s from "./App.module.css";
+
 import Profile from "../Profile/Profile";
 import userData from "../../assets/userData.json";
 import FriendList from "../FriendList/FriendList";
@@ -39,6 +43,18 @@ export default function App() {
     //       react-icons
     //     </p>
     //   </Card>
+    // </>
+    // <>
+    //   <Button>Click</Button>
+    //   <Button>Open</Button>
+    //   <Button>Close</Button>
+    //   <Button>More</Button>
+    //   <img src={Team} />
+    //   <div className={s.flex}>
+    //     <div className={s.box}></div>
+    //     <div className={s.box}></div>
+    //     <div className={s.boxRed}></div>
+    //   </div>
     // </>
     <>
       <Profile
